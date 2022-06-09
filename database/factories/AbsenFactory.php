@@ -17,7 +17,7 @@ class AbsenFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => $this->faker->numberBetween(0, 10),
+            'user_id' => $this->faker->numberBetween(1, 5),
             'tanggal' => $this->faker->dateTimeBetween('+1 week', '+3 week'),
             'alasan' => $this->faker->paragraph(),
             'active' => $this->faker->boolean(),
